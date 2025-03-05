@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DeadLayingHensDetection.iml" filepath="$PROJECT_DIR$/.idea/DeadLayingHensDetection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/HeatStressDetection.iml" filepath="$PROJECT_DIR$/.idea/HeatStressDetection.iml" />
     </modules>
   </component>
 </project>
