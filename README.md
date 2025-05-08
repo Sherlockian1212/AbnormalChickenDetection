@@ -1,36 +1,22 @@
 
-# 🐔 Abnormal Chicken Detection
+# 🐔 Phát hiện trạng thái bất thường của gà dựa trên kết hợp mạng học sâu, luồng quang học và ứng dụng vào trang trại thực tế
 
-> **Khóa luận tốt nghiệp đại học ngành Khoa học Máy tính**  
+> **Khóa luận tốt nghiệp đại học**  
 > **Sinh viên thực hiện:** Thái Thị Kim Yến  
 > **Trường:** Trường Đại học Sư phạm Thành phố Hồ Chí Minh  
-> **Khoa:** Khoa Công nghệ Thông tin  
-> **Niên khóa:** 2020–2024  
-> **Giảng viên hướng dẫn:** PGS. TS. Tống Xuân Tám  
+> **Khoa:** Khoa Công nghệ Thông tin
+> **Chuyên ngành:** Khoa học máy tính
+> **Niên khóa:** 2021–2025  
+> **Giảng viên hướng dẫn:** TS. Ngô Quốc Việt (Thầy Việt dễ thương)
 
 ---
 
-**Abnormal Chicken Detection** là một dự án ứng dụng thị giác máy tính (computer vision) và học sâu (deep learning) vào lĩnh vực chăn nuôi, nhằm phát hiện **gà có hành vi bất thường** trong chuồng thông qua phân tích video. Mục tiêu là hỗ trợ người chăn nuôi giám sát tự động tình trạng sức khỏe của gà, từ đó kịp thời can thiệp khi có bất thường xảy ra.
+**Phát hiện trạng thái bất thường của gà dựa trên kết hợp mạng học sâu, luồng quang học và ứng dụng vào trang trại thực tế** là một dự án ứng dụng thị giác máy tính (computer vision) và học sâu (deep learning) vào lĩnh vực chăn nuôi, nhằm phát hiện **gà có hành vi bất thường** trong chuồng thông qua phân tích video. Mục tiêu là hỗ trợ người chăn nuôi giám sát tự động tình trạng sức khỏe của gà, từ đó kịp thời can thiệp khi có bất thường xảy ra.
 
 📌 **Dự án gồm 2 nhánh chính:**
 
 - 🔴 **Dead Chicken Detection** – Phát hiện gà chết bằng YOLOv8  
 - 🔥 **Heat-Stressed Chicken Detection** – Phát hiện gà bị stress nhiệt qua phân tích Optical Flow
-
----
-
-## 📁 Cấu trúc thư mục
-
-```bash
-AbnormalChickenDetection/
-├── DeadChicken/           # Nhánh phát hiện gà chết
-├── HeatStressChicken/     # Nhánh phát hiện gà bị stress nhiệt
-├── Weight/                # Trọng số mô hình
-├── Frame/                 # Khung hình video đầu vào
-├── Process/               # Dữ liệu trung gian
-├── requirements.txt       # Thư viện cần thiết
-└── README.md
-```
 
 ---
 
@@ -54,7 +40,7 @@ python main.py --video path/to/video.mp4
 
 ## 🔴 Dead Chicken Detection
 
-Áp dụng mô hình **YOLOv8** để nhận diện hình ảnh gà chết trong chuồng. Mô hình đã được huấn luyện trên tập dữ liệu tuỳ chỉnh từ thực tế.
+Nghiên cứu sử dụng một mô hình học sâu để xác định vị trí của gà có nguy cơ chết thông qua hình ảnh nhiệt. Sau đó, áp dụng thuật toán luồng quang học để phát hiện các đối tượng đứng yên, nhằm đưa ra kết luận cuối cùng về việc có gà chết hay không.
 
 🔧 **Cách chạy:**
 
